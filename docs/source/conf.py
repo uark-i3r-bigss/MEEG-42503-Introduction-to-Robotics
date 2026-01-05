@@ -2,12 +2,12 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'MEEG-42503-Introduction-to-Robotics'
+copyright = '2026, BIGSS UARK'
+author = 'Joshua Liu'
 
-release = '0.1'
-version = '0.1.0'
+release = 'Spring 2026'
+version = 'Spring 2026'
 
 # -- General configuration
 

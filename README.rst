@@ -1,9 +1,6 @@
-Template for the Read the Docs tutorial
+MEEG 42503 - Introduction to Robotics Course Materials
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
-
-Read the tutorial here:
+Read the documentation here:
 
 https://docs.readthedocs.io/en/stable/tutorial/
