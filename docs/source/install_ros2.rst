@@ -1,19 +1,16 @@
-Installation Guide
+ROS2 Installation Guide
 ===================
 
 .. _installation:
 
-This tutorial will briefly introduce the basic tools you are going to use
- throughout this course and how to install them. The tools are essential
- for the homeworks and projects so please make sure you grasp the basic ideas
- and all the tools are good to go after you follow this guide.
+This tutorial will briefly introduce the basic tools you are going to use throughout this course and how to install them. The tools are essential for the homeworks and projects so please make sure you grasp the basic ideas and all the tools are good to go after you follow this guide.
 
-You will need to use `ROS2 <https://docs.ros.org/en/humble/index.html>`_ (Robot Operating System). ROS2 is easier to install and run in Linux-like
-systems. So this tutorial will only introduce how to install ROS2 HUmble on Ubuntu 22.04.5 Jammy Jellyfish. You are free to use other version of ROS2 if you are familiar with this framework (all variants of ROS2
-share the same coding conventions). There are three ways to install Ubuntu on your pc: Virtual Machine, Dual-boot, and WSL (Windows Subsystem for Linux).
+You will need to use `ROS2 <https://docs.ros.org/en/kilted/index.html>`_ (Robot Operating System). ROS2 is easier to install and run in Linux-like
+systems. So this tutorial will only introduce how to install ROS2 Kilted on Ubuntu 24.04. You are free to use other version of ROS2 if you are familiar with this framework (all variants of ROS2
+share the same coding conventions). There are many ways to install Ubuntu on your pc: Set up a virtual environment with RoboStack, Use a Virtual Machine, Setup a Dual-boot OS, or WSL (Windows Subsystem for Linux).
 
 
-Virtual Environment (RoboStack) ``recommended``
+RoboStack (Virtual Environment) ``recommended``
 ------------------------------------------------
 
 RoboStack is the easiest way to install ROS2. Basically, it allows you to install 
@@ -25,18 +22,19 @@ without contaminating your base environment, RoboStack is a very handy tool.
 
 1. **Select a Package manager**
 
-A Package Manager is a software that automates the installation, updating, upgrading, configuration, and removal of other software packages on a system.
+You need a package manager. A Package Manager is a software that automates the installation, updating, upgrading, configuration, and removal of other software packages on a system.
 
 * conda: The original cross-platform package and environment manager.
 * mamba: A reimplementation of conda in C++ that maintains full compatibility while providing substantially faster dependency resolution. Use mamba install rather than conda install for improved performance.
 * Miniforge: A minimal conda distribution that includes mamba as the default solver. This provides an efficient base installation without extraneous packages.
 * conda-forge: A community package repository compatible with both conda and mamba. It serves as the primary source for the RoboStack ROS 2 environment.
+* pixi: A lightweight package manager built on top of mamba, designed for easy installation of ROS 2 and related packages.
 
 2. **Environment Setup**
 
 Construct the ROS 2 environment following the `RoboStack Tutorials <https://robostack.github.io/GettingStarted.html>`_.
 
-We recommend using the `Miniforge <https://conda-forge.org/download/>`_ instraller.
+I recommend using the `pixi <https://pixi.prefix.dev/latest/>`_ or `Miniforge <https://conda-forge.org/download/>`_.
 
 Install `ROS2 Kilted <https://docs.ros.org/en/kilted/Installation.html>`_:
 
@@ -73,7 +71,7 @@ Virtual Machine
 
 1. **Download an Ubuntu Image**
 
-You can download an Ubuntu image `here <https://releases.ubuntu.com/jammy/>`_. Make sure to save it to a memorable location on your PC! For this tutorial, we will use the latest Ubuntu 22.04.5 LTS (long term support) release.
+You can download an Ubuntu image `here <https://releases.ubuntu.com/jammy/>`_. Make sure to save it to a memorable location on your PC! For this tutorial, we will use the latest Ubuntu 24.04.5 LTS (long term support) release.
 
 .. image:: images/iso.png
    :width: 600
@@ -179,7 +177,7 @@ In ``General`` - ``Advanced``, choose ``Shared Clipboard`` to ``bidirectional``.
 
 Restart Ubuntu and Continue. Remember ``NOT`` to upgrade to Ubuntu 24.04.   
 
-Dual-boot
+Setup Dual-boot
 ----------
 
 Dual-boot refers to a computer setup in which two operating systems are installed on a single machine,
@@ -192,15 +190,15 @@ https://releases.ubuntu.com/jammy/
 Please select the 64-bit PC (AMD64) desktop image to download.
 
 .. note::
-    If you are using macOS Applie Silicone (M1/M2), you may need to download ARM64 version https://cdimage.ubuntu.com/releases/22.04.5/release/ 
+    If you are using macOS Applie Silicone (M1/M2), you may need to download ARM64 version https://cdimage.ubuntu.com/releases/24.04/release/ 
 
-`Here <https://www.linuxtechi.com/dual-boot-ubuntu-22-04-and-windows-11/>`_ is a tutorial for installing Ubuntu 22.04 alongside Windows 11, as well as a `video tutorial <https://youtu.be/QKn5U2esuRk/>`_ .
+`Here <https://www.linuxtechi.com/dual-boot-ubuntu-22-04-and-windows-11/>`_ is a tutorial for installing Ubuntu 24.04 alongside Windows 11, as well as a `video tutorial <https://youtu.be/QKn5U2esuRk/>`_ .
 
 .. note::
     incorrectly setting up a dual-boot system can lead to data loss or system malfunctions. It's crucial to back up important data before attempting to set up a dual-boot system.
 
 
-WSL (Windows Subsystem for Linux) ``no GUI``
+WSL (Windows Subsystem for Linux)
 ---------------------------------------------------
 
 .. note::
@@ -226,19 +224,19 @@ Windows will make the changes, which may take a minute or two, then ask you to r
 
 3. **Microsoft Store**
 
-When your system boots back up, go to your Start menu and find the Microsoft Store. Once there, search for Ubuntu 22.04. 
+When your system boots back up, go to your Start menu and find the Microsoft Store. Once there, search for Ubuntu 24.04. 
 
 .. image:: images/wsl_step3.png
    :width: 600
 
-Once you have located the Ubuntu 22.04 LTS page, click on the “Get” button to download it.
+Once you have located the Ubuntu 24.04 LTS page, click on the “Get” button to download it.
 
 .. image:: images/wsl_step4.png
    :width: 600
 
-4. **Install Ubuntu 22.04**
+4. **Install Ubuntu 24.04**
 
-Once the download is complete, you can open Ubuntu 22.04 from your Start menu. 
+Once the download is complete, you can open Ubuntu 24.04 from your Start menu. 
 
 .. image:: images/wsl_step5.png
    :width: 600
@@ -248,12 +246,12 @@ There will be an installation process that appears, and it should not take very 
 .. image:: images/wsl_step6.png
    :width: 600
 
-At this time, you will also be asked to create a new user account for Ubuntu 22.04 and some other small configuration settings. 
+At this time, you will also be asked to create a new user account for Ubuntu 24.04 and some other small configuration settings. 
 
 .. image:: images/wsl_step7.png
    :width: 600
 
-All done. You can now open Ubuntu 22.04 from your Start menu any time you want to use it. You will be presented with a command line terminal and can execute nearly all the same commands you could on a physical Ubuntu 22.04 machine. 
+All done. You can now open Ubuntu 24.04 from your Start menu any time you want to use it. You will be presented with a command line terminal and can execute nearly all the same commands you could on a physical Ubuntu 24.04 machine. 
 
 .. image:: images/wsl_step8.png
    :width: 600
@@ -262,7 +260,7 @@ All done. You can now open Ubuntu 22.04 from your Start menu any time you want t
 Play with Your Ubuntu 
 -----------------------
 
-A successfully configured Ubuntu 22.04 looks like this: 
+A successfully configured Ubuntu 24.04 looks like this: 
 
 .. image:: images/ubuntu22.04.png
    :width: 600
@@ -271,7 +269,7 @@ Unlike Windows or MacOS, Ubuntu heavily relies on Command Line Tools. You can co
 common synonyms, so you should have no problems finding it. If you can’t find a launcher, or if you just want a faster way to bring up the terminal, most Linux systems use the
 same default keyboard shortcut to start it: ``Ctrl-Alt-T``.
 
-Install ROS2 Humble 
+Install ROS2 Kilted
 -----------------------
 
 The steps are adopted from  `here [Ubuntu deb packages] <https://linuxconfig.org/ubuntu-22-04-on-wsl-windows-subsystem-for-linux/>`_ .
@@ -348,7 +346,7 @@ Desktop Install (Recommended): ROS, RViz, demos, tutorials.
 
 .. code-block:: console
 
-   sudo apt install ros-humble-desktop
+   sudo apt install ros-kilted-desktop
 
 [optional] Development tools: Compilers and other tools to build ROS packages
 
@@ -363,7 +361,7 @@ Add sourcing to your shell startup script
 
 .. code-block:: console
 
-   echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+   echo "source /opt/ros/kilted/setup.bash" >> ~/.bashrc
 
 
 4. **Try some examples**

@@ -20,13 +20,11 @@ Contents
 .. toctree::
 
    install_ros2
-   coppeliasim
-   gazebo
    
 
 Schedules
 ====
-- 01/14/2026: How to install ROS2.
-- 01/16/2026: How to program and simulate a robot in ROS2.
-- 02/04/2026: How to build a robot in Mujoco.
-- 02/06/2026: How to control a robot in Mujoco.
+- 01/14/2026: Introduction to ROS2.
+- 01/16/2026: Building a robot and visualizing it in Rviz2.
+- 02/04/2026: TBD
+- 02/06/2026: TBD
