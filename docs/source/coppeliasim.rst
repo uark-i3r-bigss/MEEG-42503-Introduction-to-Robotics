@@ -96,7 +96,7 @@ Install dependencies
 
 .. code-block:: console
 
-    sudo apt-get install xsltproc python3-xmlschema
+    sudo apt-get install xsltproc python3-xmlschema python3-zmq python3-cbor2
 
 Go to the ros2 workspace
 
