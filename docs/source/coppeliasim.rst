@@ -2,7 +2,7 @@ CoppeliaSim
 ===================
 
 
-Installation on ``Ubuntu 22.04``
+Installation on ``Ubuntu 24.04``
 ----------------------------------
 
 1. **Download file**
@@ -12,23 +12,23 @@ Go to the `website <https://www.coppeliarobotics.com/>`_ and download the Coppel
 .. image:: images/coppelia_install_step1.png
    :width: 600
 
-Select the ``Ubuntu 22.04 [x86_64]`` and download
+Select the ``Ubuntu 24.04 [x86_64]`` and download
 
 .. image:: images/coppelia_install_step2.png
-   :width: 600
+   :width: 300
 
-When the download is done, you can find a file ``CoppeliaSim_Edu_V4_9_0_rev2_Ubuntu22_04.tar.xz`` in the Folder ``Downloads``
+When the download is done, you can find a file ``CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04.tar.xz`` in the Folder ``Downloads``
 
 2. **Extract file**
 
 Right click the downloaded file and choose ``Extract Here``, and wait until the extraction is done. It might take a few minutes. 
 
 .. image:: images/coppelia_install_step3.jpg
-   :width: 600
+   :width: 400
 
 3. **Run the Simulation**
 
-Enter (Left click) the folder ``CoppeliaSim_Edu_V4_9_0_rev2_Ubuntu22_04``. Right click and choose ``Open in Terminal``. You will see a terminal like
+Enter (Left click) the folder ``CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04``. Right click and choose ``Open in Terminal``. You will see a terminal like
 
 .. image:: images/coppelia_install_step4.png
    :width: 600
@@ -64,7 +64,7 @@ Using Python
 Using ROS 2 
 ------------
 
-Make sure you have installed ROS2 Humble, created and sourced the workspace ``~\ros2_ws`` as shown in `Ubuntu and ROS2 Installation Guide <install.html>`_. 
+Make sure you have installed ROS2 Kilted, created and sourced the workspace ``~\ros2_ws`` as shown in `Ubuntu and ROS2 Installation Guide <install.html>`_. 
 
 1. **Enable ROS2 Plugin in CoppeliaSim**
 
@@ -143,7 +143,7 @@ Clone the packages ``ros2_bubble_rob``
     if you extract CoppeliaSim in other locations, change ``export COPPELIASIM_ROOT_DIR=~/path/to/coppeliaSim/folder``.
 
 .. note::
-    If you start a new terminal, you will have to run ``export COPPELIASIM_ROOT_DIR=~/Downloads/CoppeliaSim_Edu_V4_9_0_rev2_Ubuntu22_04`` every time before you compile your ros2 workspace. Run this to avoid ``echo "export COPPELIASIM_ROOT_DIR=~/Downloads/CoppeliaSim_Edu_V4_9_0_rev2_Ubuntu22_04" >> ~/.bashrc``
+    If you start a new terminal, you will have to run ``export COPPELIASIM_ROOT_DIR=~/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04`` every time before you compile your ros2 workspace. Run this to avoid ``echo "export COPPELIASIM_ROOT_DIR=~/Downloads/CoppeliaSim_Edu_V4_9_0_rev2_Ubuntu22_04" >> ~/.bashrc``
 
 4. **Try it OUT**
 
@@ -151,7 +151,7 @@ Launch CoppeliaSim
 
 .. code-block:: console
 
-    cd ~/Downloads/CoppeliaSim_Edu_V4_9_0_rev2_Ubuntu22_04
+    cd ~/Downloads/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu24_04
     ./coppeliaSim.sh
 
 After the software is launched, open another terminal and Type
@@ -166,7 +166,4 @@ Upon succesful ROS2 Interface load, checking the available nodes gives this:
 
     ros2 node list
     /sim_ros2_interface
-
-
-
 
