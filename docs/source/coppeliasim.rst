@@ -96,8 +96,7 @@ Install dependencies
 
 .. code-block:: console
 
-    sudo apt-get install xsltproc
-    python3 -m pip install xmlschema
+    sudo apt-get install xsltproc python3-xmlschema
 
 Go to the ros2 workspace
 
